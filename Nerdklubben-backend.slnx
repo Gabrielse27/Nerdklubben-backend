@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Nerdklubben.Api/Nerdklubben.Api.csproj" />
+  <Project Path="Nerdklubben.Application/Nerdklubben.Application.csproj" />
+  <Project Path="Nerdklubben.Domain/Nerdklubben.Domain.csproj" />
+  <Project Path="Nerdklubben.Infrastructure/Nerdklubben.Infrastructure.csproj" />
+</Solution>

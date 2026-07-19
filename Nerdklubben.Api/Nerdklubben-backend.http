@@ -1,0 +1,6 @@
+@Nerdklubben_backend_HostAddress = http://localhost:5027
+
+GET {{Nerdklubben_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
