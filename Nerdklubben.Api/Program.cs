@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Nerdklubben.Infrastructure.Data;
+using Nerdklubben.Application.Interfaces;
+using Nerdklubben.Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,7 +24,7 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddControllers();
-
+builder.Services.AddScoped<IEmailService, EmailService>();
 
 
 var app = builder.Build();
