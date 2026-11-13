@@ -24,7 +24,8 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddControllers();
-builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddHttpClient<IEmailService, EmailService>();
+//builder.Services.AddScoped<IEmailService, EmailService>();
 
 
 var app = builder.Build();
@@ -32,8 +33,8 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+   app.UseSwagger();
+   app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
